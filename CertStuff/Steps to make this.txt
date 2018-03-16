@@ -1,0 +1,7 @@
+0. Run command prompt as admin, navigate to folder containing makecert.exe, pvk2pfx.exe
+1. makecert -sv pvkname.pvk -n "CN=nameOfCert" certName.cer -b mm/dd/yyyy -e mm/dd/yyyy -r
+Dates are start date, end date,  respectively
+i.e. makecert -sv Cura-20171204.pvk -n "CN=SunPCuraCert" SunPCuraCert.cer -b 12/04/2017 -e 12/04/2099 -r
+Dates are start date, end date,  respectively
+2. PVK2PFX /pvk yourprivatekeyfile.pvk /spc yourcertfile.cer /pfx yourpfxfile.pfx /po yourpfxpassword
+i.e. PVK2PFX /pvk Cura20171204.pvk /spc SunPCuraCert.cer
