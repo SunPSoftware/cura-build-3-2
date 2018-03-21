@@ -80,7 +80,7 @@ set(CPACK_NSIS_MENU_LINKS
     "https://github.com/ultimaker/cura" "Cura Development Resources"
 )
 
-set(CPACK_NSIS_INSTALLER_MUI_FINISHPAGE_RUN_CODE "!define MUI_FINISHPAGE_RUN \\\"$WINDIR\\\\explorer.exe\\\"\n!define MUI_FINISHPAGE_RUN_PARAMETERS \\\"$INSTDIR\\\\Cura.exe\\\"")
+set(CPACK_NSIS_INSTALLER_MUI_FINISHPAGE_RUN_CODE "!define MUI_FINISHPAGE_RUN \\\"$WINDIR\\\\explorer.exe\\\"\n!define MUI_FINISHPAGE_RUN_PARAMETERS \\\"$INSTDIR\\\\SunPrint.exe\\\"")
 
 # Needed to call the correct vcredist_x["32", "64"] executable
 # TODO: Use a variable, which is already known. For example CPACK_SYSTEM_NAME -> "win32"

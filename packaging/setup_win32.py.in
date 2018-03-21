@@ -120,7 +120,7 @@ build_options = {
 executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
-               targetName = "Cura.exe",
+               targetName = "SunPrint.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
                )
 ]
