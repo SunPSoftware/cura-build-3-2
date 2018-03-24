@@ -541,19 +541,19 @@ FunctionEnd
 
 !include "FileAssociation.nsh"
 
-Section /o "Open 3MF files with Cura"
+Section /o "Open 3MF files with SunPrint"
     ${RegisterExtension} "$INSTDIR\SunPrint.exe" ".3mf" "Cura.model.3MF"
 SectionEnd
 
-Section /o "Open OBJ files with Cura"
+Section /o "Open OBJ files with SunPrint"
     ${RegisterExtension} "$INSTDIR\SunPrint.exe" ".obj" "Cura.model.OBJ"
 SectionEnd
 
-Section "Open STL files with Cura"
+Section "Open STL files with SunPrint"
     ${RegisterExtension} "$INSTDIR\SunPrint.exe" ".stl" "Cura.model.STL"
 SectionEnd
 
-Section /o "Open X3D files with Cura"
+Section /o "Open X3D files with SunPrint"
     ${RegisterExtension} "$INSTDIR\SunPrint.exe" ".x3d" "Cura.model.X3D"
 SectionEnd
 
