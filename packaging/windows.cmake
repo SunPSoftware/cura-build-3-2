@@ -75,10 +75,10 @@ set(CPACK_PACKAGE_INSTALL_DIRECTORY "SunPrint ${CURA_VERSION_MAJOR}.${CURA_VERSI
 set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
 set(CPACK_NSIS_EXECUTABLES_DIRECTORY ".")
 set(CPACK_NSIS_INSTALLED_ICON_NAME "Cura.ico")
-set(CPACK_NSIS_MENU_LINKS
-    "https://ultimaker.com/en/support/software" "Cura Online Documentation"
-    "https://github.com/ultimaker/cura" "Cura Development Resources"
-)
+#set(CPACK_NSIS_MENU_LINKS
+#    "https://ultimaker.com/en/support/software" "Cura Online Documentation"
+#    "https://github.com/ultimaker/cura" "Cura Development Resources"
+#)
 
 set(CPACK_NSIS_INSTALLER_MUI_FINISHPAGE_RUN_CODE "!define MUI_FINISHPAGE_RUN \\\"$WINDIR\\\\explorer.exe\\\"\n!define MUI_FINISHPAGE_RUN_PARAMETERS \\\"$INSTDIR\\\\SunPrint.exe\\\"")
 
